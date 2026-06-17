@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GrowthOS AI — Virtual AI Business Manager</title>
+  <meta name="description" content="GrowthOS AI — your virtual AI business manager for growth, forecasting, and automation." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">GrowthOS AI</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="success.html">Success</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="comparison.html">Compare</a>
+        <a href="faq.html">FAQ</a>
+        <a class="cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>GrowthOS AI — Your Virtual AI Business Manager</h1>
+          <p class="lead">Automated growth recommendations, revenue forecasting, lead tracking and customer sentiment — all in one intelligent dashboard.</p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="num" data-target="128">0</div>
+              <div class="label">Avg. Monthly Growth %</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-target="52">0</div>
+              <div class="label">Active Campaigns</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-target="9.8">0</div>
+              <div class="label">NPS</div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#pricing">Get Started</a>
+            <a class="btn ghost" href="#features">Explore Features</a>
+          </div>
+
+          <ul class="trust">
+            <li>Trusted by 2,000+ small businesses</li>
+            <li>Secure, SOC2-ready architecture</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glass-card assistant-preview">
+            <div id="assistant" class="assistant">
+              <div class="assistant-header">
+                <div class="dot"></div>
+                <div class="title">GrowthOS AI</div>
+                <div class="status">Online</div>
+              </div>
+              <div id="assistant-messages" class="messages">
+                <div class="message from-ai">Welcome back, Maya — your revenue projection is up 18%.</div>
+              </div>
+              <div class="assistant-input">
+                <input id="assistant-input" placeholder="Ask GrowthOS for a recommendation...">
+                <button id="assistant-send">Predict</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-screenshot glass-card">
+            <img src="assets/screenshot-placeholder.svg" alt="GrowthOS AI dashboard screenshot preview">
+            <div class="screenshot-label">Replace this image with your screenshot in <code>assets/screenshot-placeholder.svg</code></div>
+          </div>
+
+          <div id="floating-3d" class="floating-3d"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2 class="section-title">Core Features</h2>
+      <div class="features-grid">
+        <article class="feature card glass">
+          <h3>AI-Generated Insights</h3>
+          <p>Contextual recommendations using your business data, market trends and growth models.</p>
+        </article>
+        <article class="feature card glass">
+          <h3>Revenue Forecasting</h3>
+          <p>Interactive forecasting with scenario simulation and confidence intervals.</p>
+        </article>
+        <article class="feature card glass">
+          <h3>Lead Tracking</h3>
+          <p>Track pipeline velocity, conversion drivers, and automated lead scoring.</p>
+        </article>
+        <article class="feature card glass">
+          <h3>Customer Sentiment</h3>
+          <p>Real-time sentiment analysis across reviews, tickets and socials.</p>
+        </article>
+        <article class="feature card glass">
+          <h3>Automated Recommendations</h3>
+          <p>Actionable, prioritized tasks to capture low-hanging growth opportunities.</p>
+        </article>
+        <article class="feature card glass">
+          <h3>Secure Integrations</h3>
+          <p>Connect to CRM, payment, analytics and messaging tools with one click.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="dashboard container">
+      <h2 class="section-title">Interactive Dashboard Previews</h2>
+      <div class="dashboard-grid">
+        <div class="glass card preview">
+          <h4>Revenue Forecast</h4>
+          <canvas id="forecastChart"></canvas>
+        </div>
+        <div class="glass card preview">
+          <h4>Leads & Pipeline</h4>
+          <canvas id="leadsChart"></canvas>
+        </div>
+        <div class="glass card preview">
+          <h4>Customer Sentiment</h4>
+          <canvas id="sentimentChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories" class="stories container">
+      <h2 class="section-title">Success Stories</h2>
+      <div class="stories-grid">
+        <div class="story glass card">
+          <p class="quote">"GrowthOS made forecasting effortless and increased our ARR by 42% in 6 months."</p>
+          <div class="meta">— Luna Coffee Co.</div>
+        </div>
+        <div class="story glass card">
+          <p class="quote">"Automated recommendations saved our team 8 hours/week and boosted close rates."</p>
+          <div class="meta">— Solara Studios</div>
+        </div>
+        <div class="story glass card">
+          <p class="quote">"The sentiment dashboard helped us reduce churn by identifying unhappy customers early."</p>
+          <div class="meta">— Bloom Health</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing container">
+      <h2 class="section-title">Pricing</h2>
+      <div class="billing-toggle">
+        <label class="switch">
+          <input id="billingToggle" type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <div class="toggle-label">Monthly / Yearly (Save 20%)</div>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="card glass price">
+          <h3>Starter</h3>
+          <div class="price-amount"><span class="currency">$</span><span class="amount">29</span>/mo</div>
+          <ul>
+            <li>Forecasting</li>
+            <li>Lead basic</li>
+            <li>Email support</li>
+          </ul>
+          <a class="btn primary" href="#contact">Get Started</a>
+        </div>
+        <div class="card glass price recommended">
+          <h3>Growth</h3>
+          <div class="price-amount"><span class="currency">$</span><span class="amount">99</span>/mo</div>
+          <ul>
+            <li>Advanced forecasting</li>
+            <li>Lead tracking & scoring</li>
+            <li>Priority support</li>
+          </ul>
+          <a class="btn primary" href="#contact">Start Trial</a>
+        </div>
+        <div class="card glass price">
+          <h3>Scale</h3>
+          <div class="price-amount"><span class="currency">$</span><span class="amount">249</span>/mo</div>
+          <ul>
+            <li>Custom models</li>
+            <li>Enterprise integrations</li>
+            <li>Dedicated success</li>
+          </ul>
+          <a class="btn ghost" href="#contact">Contact Sales</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison container">
+      <h2 class="section-title">Feature Comparison</h2>
+      <div class="table-wrap glass card">
+        <table class="comparison-table">
+          <thead>
+            <tr><th>Feature</th><th>Starter</th><th>Growth</th><th>Scale</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Revenue Forecast</td><td>✓</td><td>Advanced</td><td>Custom</td></tr>
+            <tr><td>Lead Scoring</td><td>Basic</td><td>Advanced</td><td>Enterprise</td></tr>
+            <tr><td>Sentiment</td><td>Overview</td><td>Realtime</td><td>Historical</td></tr>
+            <tr><td>Integrations</td><td>5</td><td>20</td><td>Unlimited</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="faq" class="faq container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details class="glass card"><summary>How does GrowthOS connect to my data?</summary><p>We use secure OAuth and encrypted connectors to sync only the data you allow.</p></details>
+        <details class="glass card"><summary>Is my data private?</summary><p>Yes — data is encrypted at rest and in transit. Enterprise plans include SOC2 compliance.</p></details>
+        <details class="glass card"><summary>Can I customize forecasts?</summary><p>Yes — upgrade for custom model tuning and scenario simulations.</p></details>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2 class="section-title">Contact & Demo</h2>
+      <div class="contact-grid">
+        <form id="contactForm" class="glass card contact-form">
+          <label>Name<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Company<input type="text" name="company"></label>
+          <label>Message<textarea name="message" rows="4"></textarea></label>
+          <button class="btn primary" type="submit">Request Demo</button>
+        </form>
+        <div class="contact-info glass card">
+          <h4>Get in touch</h4>
+          <p>Email: hello@growthos.ai</p>
+          <p>Estimated response &lt;24 hours</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="foot-grid">
+        <div>© <span id="year"></span> GrowthOS AI</div>
+        <div class="foot-links">Privacy • Terms • Status</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/three@0.152.0/build/three.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GrowthOS AI — Dashboard</title>
+  <meta name="description" content="GrowthOS AI dashboard previews." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">GrowthOS AI</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="success.html">Success</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="comparison.html">Compare</a>
+        <a href="faq.html">FAQ</a>
+        <a class="cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="dashboard container">
+      <h2 class="section-title">Interactive Dashboard Previews</h2>
+      <div class="dashboard-grid">
+        <div class="glass card preview">
+          <h4>Revenue Forecast</h4>
+          <canvas id="forecastChart"></canvas>
+        </div>
+        <div class="glass card preview">
+          <h4>Leads & Pipeline</h4>
+          <canvas id="leadsChart"></canvas>
+        </div>
+        <div class="glass card preview">
+          <h4>Customer Sentiment</h4>
+          <canvas id="sentimentChart"></canvas>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="foot-grid">
+        <div>© <span id="year"></span> GrowthOS AI</div>
+        <div class="foot-links">Privacy • Terms • Status</div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/three@0.152.0/build/three.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
